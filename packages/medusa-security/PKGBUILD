@@ -42,6 +42,6 @@ package() {
   # Avoid collision with Arch's unrelated /usr/bin/medusa package.
   mv "$pkgdir/usr/bin/medusa" "$pkgdir/usr/bin/medusa-security"
   sed -i '1s|^#!.*python$|#!/usr/bin/python|' \
-    "$pkgdir/usr/bin/medusa-security"
+    "$pkgdir/usr/bin/$pkgname"
 }
 
