@@ -2,7 +2,7 @@
 # See COPYING for license details.
 # Original Maintainer: Behruz <extreme29@proton.me>
 
-pkgname=medusa-security
+pkgname=medusa-ai
 _pkgname=medusa
 pkgver=2026.7.0
 pkgrel=1
