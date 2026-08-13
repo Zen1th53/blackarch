@@ -40,7 +40,7 @@ package() {
   python -m installer --destdir="$pkgdir" dist/*.whl
 
   # Avoid collision with Arch's unrelated /usr/bin/medusa package.
-  mv "$pkgdir/usr/bin/medusa" "$pkgdir/usr/bin/medusa-security"
+  mv "$pkgdir/usr/bin/$_pkgname" "$pkgdir/usr/bin/$pkgname"
   sed -i '1s|^#!.*python$|#!/usr/bin/python|' \
     "$pkgdir/usr/bin/$pkgname"
 }
